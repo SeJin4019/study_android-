@@ -7,7 +7,6 @@ import retrofit2.http.GET;
 import retrofit2.http.Path;
 
 public interface MenuApi {
-
     // storeId를 통해 매장의 메뉴 검색
     @GET("/menu/{storeId}")
     Call<List<MenuVO>> getMenuList(@Path("storeId") int storeId);
